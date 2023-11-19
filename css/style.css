@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: var(--Violet);
+}
+
+/* Configurações gerais */
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+.content p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+.btn {
+  width: 200px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.icon a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px 7px 0px 7px;
+}
+
+.icon {
+  color: #fff;
+}
+
+/* MOBILE */
+@media screen and (max-width: 375px) {
+
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    width: 360px;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 150px;
+    margin-bottom: 40px;
+  }
+
+  .content h1 {
+    margin: 30px 20px 20px 20px;
+  }
+
+  .content p {
+    margin-bottom: 25px;
+  }
+  .attribution {
+    display: none;
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
