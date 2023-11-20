@@ -18,40 +18,48 @@
   </head>
   <body>
     <main class="card">
-      <img src="images/logo.svg" width="100" class="logo" />
 
-      <img
-        src="images/illustration-mockups.svg"
-        alt="Illustration"
-        width="250"
-      />
+      <div>
+        <img src="images/logo.svg" width="100" class="logo" />
+        <picture>
+          <source srcset="images/illustration-mockups.svg" width="400" media="(min-width: 400px)"/>
+        <img
+          src="images/illustration-mockups.svg"
+          alt="Illustration"
+          width="300"
+        />
+      </picture>
+      </div>
 
-      <article class="content">
-        <h1>Build The Community Your Fans Will Love</h1>
+      <div class="card-content">
+        <article class="content">
+          <h1>Build The Community Your Fans Will Love</h1>
 
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
 
-        <button type="button" class="btn">Register</button>
-      </article>
-      <div class="icon">
-        <a href="#">
-          <img src="images/facebook-f.svg" alt="Facebook Logo" width="10">
-        </a>
+          <button type="button" class="btn">Register</button>
+        </article>
+        <div class="icon">
+          <a href="#">
+            <img src="images/facebook-f.svg" alt="Facebook Logo" width="10" />
+          </a>
 
-        <a href="#">
-          <img src="images/twitter.svg" alt="Twitter logo" width="15">
-        </a>
+          <a href="#">
+            <img src="images/twitter.svg" alt="Twitter logo" width="15" />
+          </a>
 
-        <a href="#">
-          <img src="images/instagram.svg" alt="Instagram Logo" width="15">
-        </a>
+          <a href="#">
+            <img src="images/instagram.svg" alt="Instagram Logo" width="15" />
+          </a>
+        </div>
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p class="attribution">
         Challenge by
